@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block blockname %}
+<h1>{{obj.title}}</h1>
+<p> {% if obj.description != None and obj.description != '' %}{{ obj.description }} {% else %}
+    Description Coming Soon {% endif %}
+</p>
+{{obj.price}}
+{% endblock %}

@@ -6,5 +6,5 @@ class Product(models.Model):
     description = models.TextField(blank=True,null=True)
     price = models.DecimalField(decimal_places=2,max_digits=10000)
     summary = models.TextField(default="hello") #blake means required
-    featured = models.BooleanField() #null =True, default=True, or use makemigrations then set a defualt value
+    featured = models.BooleanField(default=False) #null =True, default=True, or use makemigrations then set a defualt value
 
