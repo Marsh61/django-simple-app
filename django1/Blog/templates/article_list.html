@@ -4,7 +4,7 @@
 {% block blockname %}
 {% for object in object_list %}
    <p>
-       {{object.id}} -> <a href= '{{object.get_absolute_url}}'></a>{{object.title}} </a>
+       {{object.id}} -> {{object.title}} 
     </p>
 {% endfor %} 
 {% endblock %}

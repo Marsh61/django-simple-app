@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.urls import reverse
 # Create your models here.
 class Product(models.Model):
     title = models.CharField(max_length=120)
@@ -8,3 +8,5 @@ class Product(models.Model):
     summary = models.TextField(default="hello") #blake means required
     featured = models.BooleanField(default=False) #null =True, default=True, or use makemigrations then set a defualt value
 
+    def get_absolute_url(self):
+        return reverse("products:product-view",kwargs={"id":self.id})

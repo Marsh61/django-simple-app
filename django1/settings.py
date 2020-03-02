@@ -41,7 +41,8 @@ INSTALLED_APPS = [
 
     # Brandons
     'django1.products',
-    'django1.pages'
+    'django1.pages',
+    'django1.Blog'
 ]
 
 MIDDLEWARE = [
